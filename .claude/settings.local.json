@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; Get-ChildItem \"D:\\\\project\\\\jualan\" -Depth 4 | Where-Object { !$_.PSIsContainer -and $_.FullName -notmatch 'node_modules|\\\\.next' } | Select-Object FullName)",
+      "PowerShell(Get-Process -Name \"node\" -ErrorAction SilentlyContinue)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "PowerShell(Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; $job = Start-Job -ScriptBlock { Set-Location \"D:\\\\project\\\\jualan\"; & node \"node_modules\\\\next\\\\dist\\\\bin\\\\next\" dev 2>&1 }; Start-Sleep -Seconds 15; Receive-Job $job -Keep | Select-Object -Last 15)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3000/admin/dashboard\" -TimeoutSec 10 -UseBasicParsing -MaximumRedirection 0 -ErrorAction Stop; \"Status: $\\($r.StatusCode\\)\" } catch { $_.Exception.Response.StatusCode.value__ })"
+    ]
+  }
+}
