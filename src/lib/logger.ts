@@ -18,7 +18,15 @@ export type LogAction =
   | "TOTP_DISABLED"
   | "TOTP_VERIFY_SUCCESS"
   | "TOTP_VERIFY_FAILED"
-  | "VIEW_LOGS";
+  | "VIEW_LOGS"
+  | "VIEW_SSL_PRODUCTS"
+  | "CREATE_SSL_PRODUCT"
+  | "UPDATE_SSL_PRODUCT"
+  | "DELETE_SSL_PRODUCT"
+  | "VIEW_SSL_ORDERS"
+  | "UPDATE_SSL_ORDER"
+  | "ISSUE_SSL"
+  | "DELETE_SSL_ORDER";
 
 export interface LogActor {
   id?:    number | string;

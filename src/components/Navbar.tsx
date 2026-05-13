@@ -4,6 +4,7 @@ import Link from "next/link";
 
 const navLinks = [
   { label: "Produk", href: "/produk" },
+  { label: "Sewa SSL", href: "/ssl" },
   { label: "Keunggulan", href: "/#keunggulan" },
   { label: "Testimoni", href: "/#testimoni" },
   { label: "FAQ", href: "/#faq" },

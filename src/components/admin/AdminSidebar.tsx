@@ -4,12 +4,14 @@ import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 
 const navItems = [
-  { href: "/admin/dashboard", icon: "📊", label: "Dashboard" },
-  { href: "/admin/products",  icon: "📦", label: "Produk" },
-  { href: "/admin/orders",    icon: "🧾", label: "Pesanan" },
-  { href: "/admin/users",     icon: "👥", label: "Pengguna" },
-  { href: "/admin/logs",      icon: "🗂️", label: "Activity Log" },
-  { href: "/admin/settings",  icon: "⚙️", label: "Pengaturan" },
+  { href: "/admin/dashboard",    icon: "📊",  label: "Dashboard" },
+  { href: "/admin/products",     icon: "📦",  label: "Produk" },
+  { href: "/admin/orders",       icon: "🧾",  label: "Pesanan" },
+  { href: "/admin/ssl-products", icon: "🔒",  label: "Paket SSL" },
+  { href: "/admin/ssl-orders",   icon: "🛡️",  label: "Pesanan SSL" },
+  { href: "/admin/users",        icon: "👥",  label: "Pengguna" },
+  { href: "/admin/logs",         icon: "🗂️", label: "Activity Log" },
+  { href: "/admin/settings",     icon: "⚙️",  label: "Pengaturan" },
 ];
 
 export default function AdminSidebar() {

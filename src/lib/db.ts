@@ -34,7 +34,7 @@ export async function execute(
   sql: string,
   params?: unknown[]
 ): Promise<mysql.ResultSetHeader> {
-  const [result] = await pool.execute(sql, params);
+  const [result] = await pool.execute(sql, params as never);
   return result as mysql.ResultSetHeader;
 }
 

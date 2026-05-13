@@ -6,7 +6,7 @@ const SECRET = new TextEncoder().encode(
 
 export const COOKIE_NAME    = "aj_token";
 export const TEMP_COOKIE    = "aj_totp_temp";   // cookie sementara untuk step TOTP
-const TOKEN_TTL              = "7d";
+const TOKEN_TTL              = "1d";
 const TEMP_TOKEN_TTL         = "5m";            // hanya 5 menit untuk selesaikan TOTP
 
 // ── Payload token penuh ───────────────────────────────────────────────────────
